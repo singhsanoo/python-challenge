@@ -1,4 +1,3 @@
-from distutils import text_file
 import os
 import csv
 
@@ -28,10 +27,12 @@ winner = max(vote_count_dict, key=vote_count_dict.get)
 
 
 #printing header
-result_header = f"""Election Results
+result_header = f"""
+Election Results
 {'-' * 30}
 Total Votes: {num_votes}
 {'-' * 30}"""
+
 print(result_header)
 
 #printing vote summary
